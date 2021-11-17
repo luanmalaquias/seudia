@@ -1,0 +1,49 @@
+* {
+    font-size: 1rem;
+}
+
+#frases-desmotivationais {
+    background-color: black;
+    color: white;
+}
+
+#frases-motivacionais {
+    background-image: url("https://picsum.photos/1360") !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: saturate(200%);
+    color: yellow;    
+}
+
+#text-des, #text-mot {
+    animation: fade 5s normal;
+}
+
+#text-mot{
+    text-shadow: 2px 2px 1px black;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 100;
+        transform: translateX(0px);
+    }
+}
+
+@media (max-width: 1000px){
+    h1{
+        font-size: 5rem !important;
+    }
+    button{
+        font-size: 3rem !important;
+    }
+    #text-mot{
+        text-shadow: 5px 5px 1px black;
+    }
+}
